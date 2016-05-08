@@ -1,0 +1,35 @@
+{
+  "name": "ds.algo",
+  "version": "1.0.3",
+  "description": "Data Structures and Sorting Algorithms",
+  "main": "DS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jatin-arora/ds.js.git"
+  },
+  "keywords": [
+    "Stack",
+    "Queue",
+    "LinkedList",
+    "Binary Search Tree",
+    "Graph",
+    "Tries",
+    "Heap",
+    "data structure",
+    "Bubble Sort",
+    "Selection Sort",
+    "Insertation Sort",
+    "Quick Sort",
+    "Merge Sort",
+    "Heap Sort"
+  ],
+  "author": "jatin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jatin-arora/ds.js/issues"
+  },
+  "homepage": "https://github.com/jatin-arora/ds.js#readme"
+}
