@@ -1,5 +1,4 @@
 var $d = (function () {
-    //console.log("88888888888888888*************************************************8888888888888888888");
     var ds = function (identifier, additionFn) {
         ////console.log(identifier);
         if (identifier === ':ll') {
@@ -239,8 +238,6 @@ var $d = (function () {
             };
             return preorder(node.previous) || preorder(node.next);
         };
-
-        // console.log("parentNode: " + (pNode !== undefined ? pNode.val : "undefined") + " Searched Node:" + (sNode == undefined ? "undefined" : sNode.val));
 
         if (sNode !== undefined) {
             if (sNode.previous !== undefined && sNode.next !== undefined) {
