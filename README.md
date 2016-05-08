@@ -184,7 +184,7 @@ var sorter =  $d(':sorter'); or $d.sorter();
         // heap Sort
         ver sortedArray = sort.heapSort(array);
     
-7 **Heap**
+7.  **Heap**
         
         '''     
          // comparator is function used for comparison of item.
@@ -199,7 +199,7 @@ var sorter =  $d(':sorter'); or $d.sorter();
          //
          heap.deleteMin();
          
-8. **Trie**
+8.  **Trie**
    
         
         // comparator is function used for comparison of item.
