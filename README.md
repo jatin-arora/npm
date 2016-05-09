@@ -51,7 +51,7 @@ var sorter =  $d(':sorter'); or $d.sorter();
  
  **Lets the Explaination**
 
-1. **Linked List**
+1 **Linked List**
 
         To use the linked listlist two option are avaiable
         var lList = $d.linkedlist()
@@ -59,158 +59,169 @@ var sorter =  $d(':sorter'); or $d.sorter();
         var lList = $d(':ll');
         API's Supported
         
-        // To add a value at last.
+        /* To add a value at last. */
         lList.addToLast(val);
         
-        // Add a value at start of linkedlist.
+        /* Add a value at start of linkedlist. */
         lList.moveToFirst(val);
         
-        // return the next item in the linked list.
-        lList.next();
+        /* return an object having next() API. */
+        var it = lList.iterator();
+        var nextVal = it.next();
         
-        // returns the size of linked list.
+        /* returns the size of linked list. */
         lList.size();
 
       
        
-2. **Stack**
+2 **Stack**
     
     
-            // comparator is function used for comparison of item.
-            // its an optional parameter.
+            /* comparator is function used for comparison of item.
+             its an optional parameter. */
             var stk = $d.stack(comparator);
              or
             var stk = $d(':st', comparator)';
             
-            // Push an item to stack
+            /* Push an item to stack. */
             stk.push(item);
-            // Removes and return the top item
+            
+            /* Removes and return the top item */
             stk.pop();
-            // returns the top item without removal
+            
+            /* returns the top item without removal */
             stk.peek();
-            // size of stack
+            
+            /* Returns the size of stack */
             stk.size();
 
 
-3.  **Queue**
+3 **Queue**
      
-        // comparator is function used for comparison of item.
-        // its an optional parameter.
+        /* comparator is function used for comparison of item.
+           its an optional parameter. */
          var que = $d.queue(comparator);
                or
          var que = $d(':qe', comparator);       
 
-         // ** Supported API's 
-         //
-         que.enqueue();
-         //
+         /* ** Supported API's**  */
+         
+         /* Adds the value to the rear of the queue. */
+         que.enqueue(val);
+         
+         /* Removes and return the value from the front of the queue. */
          que.dequeue();
-         //
+         
+         /* Returns an item from the front of the queue without removing it. */
          que.peek();
-         //
+         
+         /* Returns true of the item is part of queue otherwise false.*/
          que.contains(item);
-         //
+         
+         /* Returns the length of the queue. */
          que.size();
          
-4.  **Binary Search Tree**
+4  **Binary Search Tree**
     
-        // comparator is function used for comparison of item.
-        // its an optional parameter.
+        /* comparator is function used for comparison of item.
+           its an optional parameter. */
          var bst = $d.binarySearchTree(comparator);
                or
          var bst = $d(':bst', comparator);       
         
-        // ** Supported API's **
-         //
+        /* ** Supported API's **  */
+         /* */
          bst.add();
-         //
+         
+         /* */
          bst.delete();
-         //
+         /* */
          bst.inorder();
          
      
-5. **Graph**
+5 **Graph**
 
-         // comparator is function used for comparison of item.
-        // its an optional parameter.
+         /* Comparator is function used for comparison of item.
+           its an optional parameter. Two ways to create the graph */
+           
          var grp = $d.graph(comparator);
                or
          var grp = $d(':grp', comparator);     
 
-          // ** Supported API's **
+          /* ** Supported API's **  */
 
-          //
+          /* Create and return a vertex with passed value. Once vertex is created add to the graph. */
           var vertex = grp.createVertex(val);
           grp.addVertex(vertex);
 
-          //
+          /* Create and return a Edge with passed value. Once Edge is created add to the graph.*/
           var edge = grp.createEdge(vert1, vert2);
           grp.addEdge(edge);
 
-          //
+          /* Once Vertexes and Edges are created and added to the graph, this API will create the graph.*/
           grp.buildGraph();
 
-          //
+          /* This will traverse the graph in breath first order and prints the vertex values/  */
           grp.breathFirstTraversal();
 
-          // 
+         /* This will traverse the graph in depth first order and prints the vertex values/  */
           grp.depthFirstTraversal();
         ...
 
-6. **Sorting Algorithms**
+6 **Sorting Algorithms**
   
-        // comparator is function used for comparison of item.
-        // its an optional parameter.
+        /* comparator is function used for comparison of item.
+           its an optional parameter. Two ways to create the Sorter. */
+           
         var sorter = $d.sorter(comparator);
            or
         var sorter = $d(':sorter', comparator);     
         
-        // Bubble Sort
+        /* Bubble Sort */
         ver sortedArray = sort.bubbleSort(array);
         
-        // Selection Sort
+        /* Selection Sort */
         ver sortedArray = sort.selectionSort(array);
         
         
-        // insertion Sort
+        /* Insertion Sort */
         ver sortedArray = sort.insertionSort(array);
         
-        // quick Sort
+        /* Quick Sort */
         ver sortedArray = sort.quickSort(array);
         
-        // merge Sort
+        /* Merge Sort */
         ver sortedArray = sort.mergeSort(array);
         
-        // heap Sort
+        /* Heap Sort */
         ver sortedArray = sort.heapSort(array);
     
-7.  **Heap**
+7 **Heap**
         
-        '''     
-         // comparator is function used for comparison of item.
-        // its an optional parameter.
+        /* Comparator is function used for comparison of item.
+           its an optional parameter. */
          var heap = $d.heap(comparator);
                or
          var heap = $d(':heap', comparator);     
          
-         //
+         /* This will build the heap based on passed array values. */
          heap.build(array);
          
-         //
+        /* This will return and delete the min value. */
          heap.deleteMin();
          
-8.  **Trie**
+8 **Trie**
    
         
-        // comparator is function used for comparison of item.
-        // its an optional parameter.
+        /* Comparator is function used for comparison of item.
+           its an optional parameter. */
          var trie = $d.tries(comparator);
                or
          var trie = $d(':tri', comparator);   
          
-         //
+        /* Use this API to pass on array of data to be stored in the Trie and then build it.*/
          trie.addData(data)
          
-         //
+         /* Return true if the passed text is available in Trie otherwise false. */
          trie.find(text);
          
