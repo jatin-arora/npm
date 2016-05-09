@@ -57,13 +57,14 @@ var sorter =  $d(':sorter'); or $d.sorter();
         var lList = $d.linkedlist()
                  OR
         var lList = $d(':ll');
-        API's Supported
         
-        /* To add a value at last. */
+         **Supported API's**
+        
+        /* To add a value at last of LinkedList. */
         lList.addToLast(val);
         
         /* Add a value at start of linkedlist. */
-        lList.moveToFirst(val);
+        lList.addAtFirst(val);
         
         /* return an object having next() API. */
         var it = lList.iterator();
@@ -83,6 +84,8 @@ var sorter =  $d(':sorter'); or $d.sorter();
              or
             var stk = $d(':st', comparator)';
             
+             **Supported API's**
+             
             /* Push an item to stack. */
             stk.push(item);
             
@@ -96,7 +99,7 @@ var sorter =  $d(':sorter'); or $d.sorter();
             stk.size();
 
 
-3 **Queue**
+3 **Queue** 
      
         /* comparator is function used for comparison of item.
            its an optional parameter. */
@@ -104,7 +107,7 @@ var sorter =  $d(':sorter'); or $d.sorter();
                or
          var que = $d(':qe', comparator);       
 
-         /* ** Supported API's**  */
+          **Supported API's**
          
          /* Adds the value to the rear of the queue. */
          que.enqueue(val);
@@ -121,6 +124,7 @@ var sorter =  $d(':sorter'); or $d.sorter();
          /* Returns the length of the queue. */
          que.size();
          
+         
 4  **Binary Search Tree**
     
         /* comparator is function used for comparison of item.
@@ -129,13 +133,15 @@ var sorter =  $d(':sorter'); or $d.sorter();
                or
          var bst = $d(':bst', comparator);       
         
-        /* ** Supported API's **  */
-         /* */
-         bst.add();
+        **Supported API's**
+        
+         /* Adds a new value to Binary Search Tree. It will be placed in BST based on comparator or comparison. */
+         bst.add(val);
          
-         /* */
+         /* Removes a node from the binary Search tree. */
          bst.delete();
-         /* */
+         
+         /* Do inorder traversal of BST and return the array after traversal. */
          bst.inorder();
          
      
@@ -166,7 +172,7 @@ var sorter =  $d(':sorter'); or $d.sorter();
 
          /* This will traverse the graph in depth first order and prints the vertex values/  */
           grp.depthFirstTraversal();
-        ...
+        
 
 6 **Sorting Algorithms**
   
@@ -177,24 +183,24 @@ var sorter =  $d(':sorter'); or $d.sorter();
            or
         var sorter = $d(':sorter', comparator);     
         
-        /* Bubble Sort */
-        ver sortedArray = sort.bubbleSort(array);
+        /* Sort using Bubble Sort algorithm and returns the sorted array. */
+        ver sortedArray = sorter.bubbleSort(array);
         
-        /* Selection Sort */
-        ver sortedArray = sort.selectionSort(array);
+        /* Sort using Selection Sort algorithm and returns the sorted array. */
+        ver sortedArray = sorter.selectionSort(array);
         
         
-        /* Insertion Sort */
-        ver sortedArray = sort.insertionSort(array);
+        /* Sort using Insertion Sort algorithm and returns the sorted array. */
+        ver sortedArray = sorter.insertionSort(array);
         
-        /* Quick Sort */
-        ver sortedArray = sort.quickSort(array);
+        /* Sort using Quick Sort algorithm and returns the sorted array.*/
+        ver sortedArray = sorter.quickSort(array);
         
-        /* Merge Sort */
-        ver sortedArray = sort.mergeSort(array);
+        /* Sort using Merge Sort algorithm and returns the sorted array. */
+        ver sortedArray = sorter.mergeSort(array);
         
-        /* Heap Sort */
-        ver sortedArray = sort.heapSort(array);
+        /* Sort using Heap Sort algorithm and returns the sorted array. */
+        ver sortedArray = sorter.heapSort(array);
     
 7 **Heap**
         
