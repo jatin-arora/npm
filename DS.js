@@ -35,7 +35,7 @@ var $d = (function () {
 
     function LinkedList(comparator) {
         this.comparator = comparator;
-        this.root;
+        this.root; 
     };
 
     LinkedList.prototype.addToLast = function (val) {
