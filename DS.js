@@ -35,7 +35,7 @@ var $d = (function () {
 
     function LinkedList(comparator) {
         this.comparator = comparator;
-        this.root; 
+        this.root;
     };
 
     LinkedList.prototype.addToLast = function (val) {
@@ -203,7 +203,7 @@ var $d = (function () {
 
     };
 
-    BinarySearchTree.prototype.delete = function (remVal) {
+    BinarySearchTree.prototype.deleteVal = function (remVal) {
         var rootNode = this.root;
         var compFn = this.compareFn;
 
@@ -253,7 +253,7 @@ var $d = (function () {
         if (sNode !== undefined) {
             if (sNode.previous !== undefined && sNode.next !== undefined) {
                 var sucessorNode = sucessor(sNode);
-                this.delete(sucessorNode.val);
+                this.deleteVal(sucessorNode.val);
 
                 if (pNode !== undefined) {
                     if (equals(pNode.previous.val, sNode.val)) {
@@ -844,9 +844,15 @@ var $d = (function () {
         return new Stack();
     };
 
-    ds.linkedlist = function (val) {
-        return new LinkedList(val);
+    ds.linkedlist = function (compFn) {
+        return new LinkedList(compFn);
     };
+
+    ds.xorlinkedlist = function (compFn) {
+        return new XORLinkedList(compFn);
+    };
+
+
     ds.binarySearchTree = function (compFn) {
         return new BinarySearchTree(compFn);
     };
